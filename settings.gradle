@@ -1,0 +1,5 @@
+rootProject.name = 'TestProject'
+include 'RestWebService'
+include 'JavaTest'
+include 'JavaTest'
+
