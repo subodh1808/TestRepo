@@ -17,4 +17,13 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+    @RequestMapping("/start")
+    public String startJob(@RequestParam (value = "customerId") String customerId){
+        if (customerId == null){
+            throw new RuntimeException( "Invalid customer Id");
+        }
+
+        return "Starting job for customer "+ customerId;
+    }
 }
