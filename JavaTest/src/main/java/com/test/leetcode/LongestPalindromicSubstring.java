@@ -1,5 +1,7 @@
 package com.test.leetcode;
 
+import java.awt.*;
+
 public class LongestPalindromicSubstring {
 
 
@@ -15,6 +17,7 @@ public class LongestPalindromicSubstring {
                 end = i + len / 2;
             }
         }
+        System.out.println("ABCDEDFg");
         return s.substring(start, end + 1);
     }
 
